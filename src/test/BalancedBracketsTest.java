@@ -72,4 +72,10 @@ public class BalancedBracketsTest {
     public void emptyString(){
         assertTrue(BalancedBrackets.hasBalancedBrackets(""));
   }
+    @Test
+    public void testingString(){
+        String spec="This is test string with complete brackets inside";
+        String data="ThisisString[]message";
+        Boolean temp=(BalancedBrackets.hasBalancedBrackets(data));    
+        assertTrue(spec,temp);
 }
